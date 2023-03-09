@@ -3,14 +3,14 @@ import '../css/Header.scss'
 export default function Header() {
     return (
         <>
-            <header>
+            <header className='header'>
                 <div className="logo">
-                    <button>
+                    <button className='button'>
                         <p>LOGO</p>
                     </button>
                 </div>
                 <div className="cart">
-                    <button>
+                    <button className='button'>
                         <p>CART</p>
                     </button>
                 </div>

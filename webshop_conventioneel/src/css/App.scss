@@ -1,0 +1,29 @@
+/* Global Variables
+
+    Sizes:
+        1rem = 16px
+*/
+
+/* Colors */
+$primaryColor: #FFFFFF;
+$secondaryColor: #621311;
+/* Margin & Padding Sizes */
+$smallM: .5rem;
+$mediumM: 1rem;
+$largeM: 2rem;
+$xlargeM: 4rem;
+$xxlargeM: 8rem;
+/* Component Sizes */
+$smallC: 4rem;
+$mediumC: 8rem;
+$largeC: 16rem;
+/* Text Styles */
+$h2Font: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 600
+);
+
+body{
+    margin: 0;
+}

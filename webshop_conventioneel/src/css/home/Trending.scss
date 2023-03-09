@@ -1,0 +1,21 @@
+@import '../App';
+
+.trending{
+    display: flex;
+    justify-content: center;
+    h2{
+        width: $largeC;
+        height: $smallC;
+        margin: $mediumM 0;
+        border-bottom: 1px solid $secondaryColor;
+        text-align: center;
+        line-height: 37px;
+        color: $secondaryColor;
+        @each $property, $value in $h2Font {
+            #{$property}: $value;
+          }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

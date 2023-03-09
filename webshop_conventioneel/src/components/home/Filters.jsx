@@ -1,3 +1,5 @@
+import '../../css/home/Filters.scss'
+
 export default function Filters() {
     return (
         <>

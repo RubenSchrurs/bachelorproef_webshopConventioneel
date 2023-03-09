@@ -1,4 +1,25 @@
+@import 'App';
+
 header{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid $secondaryColor;
+    padding: 0 $mediumM;
+    button{
+        padding: 0;
+        border: 0;
+        background-color: $primaryColor;
+        height: $smallC;
+        p{
+            margin: 0;
+            padding: 0;   
+        }
+    }
 }
+
+/* Desktop */
+@media (min-width: 850px) {
+    header {
+        padding: 0 $xxlargeM;
+    }
+  }
