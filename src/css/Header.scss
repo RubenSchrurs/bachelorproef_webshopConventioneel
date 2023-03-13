@@ -13,7 +13,23 @@ header{
         color: $secondaryColor;
         p{
             margin: 0;
-            padding: 0;   
+            padding: 0;
+            @each $property, $value in $headerFont {
+                #{$property}: $value;
+            }
+        }
+    }
+    .logo{
+        button{
+            text-align: start;
+        }
+        button:hover{
+            cursor: pointer;
+            p{
+                padding: 5px;
+                border-bottom: 1px solid $secondaryColor;
+                transition: all .2s ease;
+            }
         }
     }
 }

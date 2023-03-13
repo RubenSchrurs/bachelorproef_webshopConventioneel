@@ -1,0 +1,31 @@
+@import '../App';
+
+.releaseSmall{
+    border: none;
+    background-color: $primaryColor;
+    .releaseCoverArt{
+        width: 128px;
+        height: 128px;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 5px #888888;
+    }
+}
+.releaseSmall:hover{
+    cursor: pointer;
+    .releaseCoverArt{
+        box-shadow: none;
+        transition: all .3s;
+    }
+}
+
+@media (min-width: 850px) {
+    .releaseSmall{
+        .releaseCoverArt{
+            width: 192px;
+            height: 192px;
+        }
+    }
+}

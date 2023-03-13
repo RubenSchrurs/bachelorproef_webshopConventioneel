@@ -27,7 +27,7 @@ export default function SearchBar() {
                     value={searchInput} />
                 </div>
                 <div className="icon">
-                    <p>I</p>
+                    <img src="../../images/icons/find.svg" alt="findIcon" />
                 </div>
             </div>
         </>

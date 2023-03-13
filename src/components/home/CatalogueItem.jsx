@@ -3,7 +3,7 @@ import '../../css/home/CatalogueItem.scss'
 export default function CatalogueItem() {
     return (
         <>
-            <div className='releaseLarge'>
+            <button className='releaseLarge'>
                 <div className='releaseCoverArt'></div>
                 <div className='releaseDescription'>
                     <div className='releaseInfo'>
@@ -16,7 +16,7 @@ export default function CatalogueItem() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </button>
         </>
     )
 }

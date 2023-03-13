@@ -6,12 +6,12 @@ export default function Header() {
             <header className='header'>
                 <div className="logo">
                     <button className='button'>
-                        <p>LOGO</p>
+                        <p>STATIC</p>
                     </button>
                 </div>
                 <div className="cart">
                     <button className='button'>
-                        <p>CART</p>
+                        <img src="../images/icons/cart.svg" alt="cartIcon" />
                     </button>
                 </div>
             </header>

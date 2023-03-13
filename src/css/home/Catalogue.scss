@@ -20,7 +20,11 @@
         align-items: center;
         justify-content: center;
     }
-
+    .catalogueReleases{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $smallM;
+    }
 }
 
 @media (min-width: 850px) {
@@ -30,7 +34,7 @@
             justify-content: flex-start;
         }
         .catalogueReleases{
-            display: flex;
+            flex-direction: row;
             width: 100%;
             justify-content: space-between;
             flex-wrap: wrap;

@@ -2,6 +2,8 @@
 
 .releaseLarge{
     margin: 0 0 $largeM;
+    border: none;
+    background-color: $primaryColor;
     .releaseCoverArt{
         width: 256px;
         height: 256px;
@@ -9,9 +11,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 5px 5px 5px #888888;
+        border: 3px solid #ddd;
     }
     .releaseDescription{
         color: $secondaryColor;
+        text-align: start;
         .releaseInfo{
             display: flex;
             flex-direction: column;
@@ -40,5 +45,16 @@
                 }
             }
         }
+    }
+}
+.releaseLarge:hover{
+    cursor: pointer;
+    .releaseCoverArt{
+        box-shadow: none;
+        transition: all .3s;
+    }
+    .releaseDescription{
+        padding-left: $smallM;
+        transition: all .3s;
     }
 }
