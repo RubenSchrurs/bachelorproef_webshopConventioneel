@@ -1,0 +1,44 @@
+@import '../App';
+
+.releaseLarge{
+    margin: 0 0 $largeM;
+    .releaseCoverArt{
+        width: 256px;
+        height: 256px;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .releaseDescription{
+        color: $secondaryColor;
+        .releaseInfo{
+            display: flex;
+            flex-direction: column;
+            .releaseTitle{
+                h5{
+                    margin: $mediumM 0 $smallM;
+                    @each $property, $value in $h5Font {
+                        #{$property}: $value;
+                      }
+                }
+            }
+            .releaseNameAndPrice{
+                display: flex;
+                justify-content: space-between;
+                h6{
+                    margin: 0;
+                    @each $property, $value in $h6Font {
+                        #{$property}: $value;
+                      }
+                }
+                h5{
+                    margin: 0;
+                    @each $property, $value in $h5Font {
+                        #{$property}: $value;
+                      }
+                }
+            }
+        }
+    }
+}

@@ -26,11 +26,20 @@ $h2Font: (
     font-style: normal,
     font-weight: 600
 );
-
-$filterFont: (
+$h5Font: (
     font-family: 'Montserrat',
     font-style: normal,
     font-weight: 600
+);
+$h6Font: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 500
+);
+$filterFont: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 500
 );
 // Make variables for bigger screen sizes with @media
 
