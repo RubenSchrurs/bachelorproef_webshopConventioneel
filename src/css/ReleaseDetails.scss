@@ -1,0 +1,169 @@
+@import 'App';
+
+/* Mobile */
+.releaseDetailsWrapper{
+    margin: 0 2rem;
+    .releaseDetails{
+        .releaseTitle{
+            color: $secondaryColor;
+            h2{
+                margin: 0;
+                padding: $largeM 0 $smallM;
+                border-bottom: 1px solid $secondaryColor;
+                @each $property, $value in $h2Font {
+                    #{$property}: $value;
+                }
+            }
+            h4{
+                margin: $smallM 0 $mediumM;
+                @each $property, $value in $h4Font {
+                    #{$property}: $value;
+                }
+            }
+        }
+        .releaseCoverArtInfoBuyButtonAndDescription{
+            .releaseCoverArt{
+                width: 100%;
+                padding-top: 100%;
+                background-color: #ddd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 5px 5px 5px #888888;
+            }
+            .releaseInfoBuyButtonAndDescription{
+                .releaseInfo{
+                    .releasePriceAndType{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: $secondaryColor;
+                        .releasePrice{
+                            @each $property, $value in $h4Font {
+                                #{$property}: $value;
+                            }
+                        }
+                        .releaseType{
+                            width: $smallC;
+                            height: $xsmallC;
+                            margin: 0;
+                            background-color: $secondaryColor;
+                            color: $primaryColor;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            @each $property, $value in $h4Font {
+                                #{$property}: $value;
+                            }
+                        }
+                    }
+                    .releaseGenres{
+                        display: flex;
+                        justify-content: flex-end;
+                        color: $secondaryColor;
+                        :not(:first-child){
+                            border-left: 1px solid $secondaryColor;
+                        }
+                        h5{
+                            margin: 0;
+                            padding: 0 $xsmallM;
+                            @each $property, $value in $h5Font {
+                                #{$property}: $value;
+                            }
+                        }
+                    }
+                    .releaseLabelInfo{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: $mediumM 0;
+                        border: 1px solid $secondaryColor;
+                        color: $secondaryColor;
+                        .labelText{
+                            margin: 0;
+                            padding: $xsmallM $smallM;
+                            text-align: center;
+                            @each $property, $value in $h4Font {
+                                #{$property}: $value;
+                            }
+                        }
+                        .labelName{
+                            margin: 0;
+                            padding: $xsmallM $smallM;
+                            text-align: center;
+                            width: 100%;
+                            border-left: 1px solid $secondaryColor;
+                            @each $property, $value in $h4Font {
+                                #{$property}: $value;
+                            }
+                        }
+                    }
+                }
+                .buyButton{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 100%;
+                    height: $smallC;    
+                    background-color: $secondaryColor;
+                    color: $primaryColor;
+                    border-bottom: 1px solid $secondaryColor;
+                    h2{
+                        @each $property, $value in $addToCartFont {
+                            #{$property}: $value;
+                        }   
+                    }
+                }
+                .buyButton:hover{
+                    cursor: pointer;
+                    background-color: $primaryColor;
+                    color: $secondaryColor;
+                    transition: all .2s ease;
+                }
+                .releaseDescription{
+                    color: $secondaryColor;
+                    h2{
+                        margin: 0;
+                        padding: $largeM 0 $smallM;
+                        border-bottom: 1px solid $secondaryColor;
+                        @each $property, $value in $h2Font {
+                            #{$property}: $value;
+                        }
+                    }
+                    p{
+                        text-align: justify;
+                        @each $property, $value in $descriptionFont {
+                            #{$property}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 850px) {
+    .releaseDetailsWrapper {
+        margin: 0 $xxlargeM $xlargeM;
+        .releaseDetails{
+            .releaseCoverArtInfoBuyButtonAndDescription{
+                display: flex;
+                gap: $xlargeM;
+                .releaseCoverArt{
+                    min-width: 512px;
+                    max-width: 768px;
+                    min-height: 512px;
+                    max-height: 768px;
+                    flex: 2;
+                    padding-top: 0;
+                }
+                .releaseInfoBuyButtonAndDescription{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+  }

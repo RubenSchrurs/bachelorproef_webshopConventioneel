@@ -1,4 +1,4 @@
-@import '../App';
+@import './App';
 
 .searchBar{
     display: flex;
@@ -6,6 +6,7 @@
     align-items: center;
     height: $smallC;
     border-bottom: 1px solid $secondaryColor;
+    padding: 0 $mediumM;
     .searchField{
         input{
             margin: 0;
@@ -31,5 +32,12 @@
         p{
             margin: 0;
         }
+    }
+}
+
+/* Desktop */
+@media (min-width: 850px) {
+    .searchBar{
+        padding: 0 $xxlargeM;
     }
 }

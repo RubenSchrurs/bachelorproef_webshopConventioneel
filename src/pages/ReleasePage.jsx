@@ -1,14 +1,14 @@
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
 import Footer from '../components/Footer'
-import Home from '../components/Home'
+import ReleaseDetails from '../components/ReleaseDetails'
 
-export default function HomePage () {
+export default function ReleasePage () {
   return (
     <>
       <Header/>
       <SearchBar/>
-      <Home/>
+      <ReleaseDetails/>
       <Footer/>
     </>
   )

@@ -31,6 +31,11 @@ $h2Font: (
     font-style: normal,
     font-weight: 600
 );
+$h4Font: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 500
+);
 $h5Font: (
     font-family: 'Montserrat',
     font-style: normal,
@@ -48,6 +53,20 @@ $filterFont: (
     font-style: normal,
     font-weight: 500
 );
+$addToCartFont: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 600,
+    font-size: 20px
+);
+$descriptionFont: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 400,
+    font-size: 14px
+);
+
+
 // Make variables for bigger screen sizes with @media
 
 body{
