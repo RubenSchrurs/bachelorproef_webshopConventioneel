@@ -2,5 +2,8 @@
 
 .filters{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     border-bottom: 1px solid $secondaryColor;
+    padding: $mediumM;
 }

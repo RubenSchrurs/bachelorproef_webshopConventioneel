@@ -8,12 +8,15 @@
 $primaryColor: #FFFFFF;
 $secondaryColor: #621311;
 /* Margin & Padding Sizes */
+$xxsmallM: .125rem;
+$xsmallM: .25rem;
 $smallM: .5rem;
 $mediumM: 1rem;
 $largeM: 2rem;
 $xlargeM: 4rem;
 $xxlargeM: 8rem;
 /* Component Sizes */
+$xsmallC: 2rem;
 $smallC: 4rem;
 $mediumC: 8rem;
 $largeC: 16rem;
@@ -23,6 +26,13 @@ $h2Font: (
     font-style: normal,
     font-weight: 600
 );
+
+$filterFont: (
+    font-family: 'Montserrat',
+    font-style: normal,
+    font-weight: 600
+);
+// Make variables for bigger screen sizes with @media
 
 body{
     margin: 0;
